@@ -139,22 +139,6 @@ public void sendStudentEmail(Long id) {
 ```
 Whenever a student is saved, this method is automatically triggered to send an email with a greeting and confirmation.
 
-🔐 How to Get Gmail App Password
-Google does not allow normal password login for SMTP. You must use an App Password.
-
-Steps:
-
-Go to https://myaccount.google.com/security
-
-Turn on 2-Step Verification
-
-Go to App Passwords
-
-Choose Mail as the app and Other for the device
-
-Generate and copy the password
-
-Paste this password in your application.properties as spring.mail.password
 
 ▶️ How to Run the App
 Clone the Repository
@@ -198,46 +182,3 @@ Feel free to fork, contribute, or open issues!
 
 
 
-
-
-
-You said:
-can you add this detals on readme file
-
-
-ChatGPT said:
-Absolutely! Here's the full README.md with the sendStudentEmail(Long id) method, explanation of JavaMailSender, Gmail SMTP setup, and everything integrated properly:
-
-
-```
-git clone <your-repo-url>
-```
-cd <project-folder>
-2. Build the Project
-
-mvn clean package
-3. Run the Application
-
-mvn spring-boot:run
-4. Open in Browser
-
-http://localhost:8080/students/form
-Fill the form and submit — the data will be saved and an email will be sent!
-
-✅ Notes
-Ensure your MySQL database (sendingmaildb) exists.
-
-You must be connected to the internet to send emails.
-
-Use .gitignore to exclude application.properties from being pushed to GitHub.
-
-You can use @Value("${spring.mail.username}") to inject config values securely.
-
-🧑‍💻 Author
-Made with ❤️ by [Your Name]
-
-vbnet
-Copy
-Edit
-
-Let me know if you'd like the HTML template for the form or want me to include screenshots!
