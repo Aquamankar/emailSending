@@ -92,6 +92,26 @@ spring.mail.password=your_app_password
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 ```
+🔐 How to Get Gmail App Password
+Important: Gmail blocks less secure app access by default. You must use an App Password.
+
+Steps:
+Go to: https://myaccount.google.com/security
+
+Enable 2-Step Verification if not already enabled.
+
+Click on App Passwords
+
+Select:
+
+App: Mail
+
+Device: Other → Name it anything (e.g., "Spring App")
+
+Click Generate
+
+Copy the 16-digit app password and paste it into spring.mail.password in your application.properties.
+
 📧 JavaMailSender Explanation
 Spring Boot provides the JavaMailSender interface for sending emails. In this project, we use it like this:
 
